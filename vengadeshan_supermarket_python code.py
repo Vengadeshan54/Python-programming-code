@@ -1,4 +1,3 @@
-Super market bill generated 
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -59,7 +58,8 @@ Billing Date: {date}
 
 # Function to send the bill via email
 def send_email(to_email, subject, body):
-    from_email = "vengadeshan@example.com"     from_password = "your_password"     
+    from_email = "vengadeshan@example.com"  # Replace with your email
+    from_password = "your_password"         # Replace with your password
 
     msg = MIMEMultipart()
     msg['From'] = from_email
